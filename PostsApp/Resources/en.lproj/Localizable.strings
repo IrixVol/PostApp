@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  PostsApp
+
+  Created by Tatiana Blagoobrazova on 01.01.2023.
+  
+*/
+"Login" = "Login";
+"Invalid user ID" = "Invalid user ID";
+"User ID" = "User ID";
+"Something was wrong" = "Something was wrong";
+"Data not found" = "Data not found";
+"My Posts" = "My Posts";
