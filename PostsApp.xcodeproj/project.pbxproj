@@ -190,10 +190,11 @@
 			children = (
 				2275F4222960393200632DB2 /* PostsApp.swift */,
 				2275F45C2960487D00632DB2 /* Resources */,
+				2275F4512960396500632DB2 /* Modules */,
+				228463BE296755AA00212B81 /* Services */,
 				2275F48E296194CC00632DB2 /* CoreServices */,
 				2275F46729609E4E00632DB2 /* Extension */,
 				2275F45B2960487400632DB2 /* Component */,
-				2275F4512960396500632DB2 /* Modules */,
 			);
 			path = PostsApp;
 			sourceTree = "<group>";
@@ -210,8 +211,6 @@
 		2275F4512960396500632DB2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				227B7A442964E61C007D16B8 /* Services */,
-				2275F4762960AA8700632DB2 /* ApiModels */,
 				2275F45629603F1D00632DB2 /* LoginScreen */,
 				2275F45729603F3100632DB2 /* PostsListScreen */,
 				2275F45829603F4300632DB2 /* CommentsListScreen */,
@@ -376,9 +375,10 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		227B7A442964E61C007D16B8 /* Services */ = {
+		228463BE296755AA00212B81 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2275F4762960AA8700632DB2 /* ApiModels */,
 				2275F4D12964CFE000632DB2 /* UserService.swift */,
 				2275F4D32964D3C200632DB2 /* CoredataService.swift */,
 				227B7A452964E634007D16B8 /* PostsRequestService.swift */,

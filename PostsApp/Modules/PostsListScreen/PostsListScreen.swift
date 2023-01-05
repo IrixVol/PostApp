@@ -9,13 +9,10 @@ import SwiftUI
 
 var animationDuration: Double = 0.3
 
-struct PostsListScreen: View {
+struct PostsListScreen<ViewModel>: View where ViewModel: PostsListScreenModelProtocol {
     
-    @ObservedObject var viewModel: PostsListScreenModel  
-    init(viewModel: PostsListScreenModel) {
-        self.viewModel = viewModel
-    }
-    
+    @ObservedObject var viewModel: ViewModel
+
     var body: some View {
         
         VStack(spacing: 0) {

@@ -7,7 +7,17 @@
 
 import SwiftUI
 
-final class LoginScreenModel: ObservableObject {
+protocol LoginScreenModelProtocol: ObservableObject {
+    
+    var isLogged: Bool { get set }
+    var userIdString: String { get set }
+    var isLoginButtonEnabled: Bool { get set }
+    var loginErrorMessage: String { get }
+    var hint: String { get }
+    func checkUser()
+}
+
+final class LoginScreenModel: LoginScreenModelProtocol {
 
     @Published var isLogged: Bool = false
     @Published var isLoginButtonEnabled: Bool = false

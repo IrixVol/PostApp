@@ -8,10 +8,10 @@
 import SwiftUI
 import Combine
 
-struct LoginScreen: View {
+struct LoginScreen<ViewModel>: View where ViewModel: LoginScreenModelProtocol {
     
     @FocusState var isFocused: Bool
-    @ObservedObject var viewModel: LoginScreenModel
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         

@@ -7,13 +7,9 @@
 
 import SwiftUI
 
-struct CommentsListScreen: View {
-    
-    @ObservedObject var viewModel: CommentsListScreenModel
-    
-    init(viewModel: CommentsListScreenModel) {
-        self.viewModel = viewModel
-    }
+struct CommentsListScreen<ViewModel>: View where ViewModel: CommentsListScreenModelProtocol {
+
+    @ObservedObject var viewModel: ViewModel
     
     var body: some View {
         

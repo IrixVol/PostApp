@@ -7,7 +7,12 @@
 
 import SwiftUI
 
-final class CommentsListScreenModel: ObservableObject {
+protocol CommentsListScreenModelProtocol: ObservableObject {
+    var post: PostListItemViewModel { get set }
+    var items: [CommentListItemViewModel] { get }
+}
+
+final class CommentsListScreenModel: CommentsListScreenModelProtocol {
 
     @Published var post: PostListItemViewModel
     @Published var items: [CommentListItemViewModel] = []

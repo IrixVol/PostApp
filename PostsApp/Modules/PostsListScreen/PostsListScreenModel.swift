@@ -8,7 +8,16 @@
 import SwiftUI
 import Combine
 
-final class PostsListScreenModel: ObservableObject {
+protocol PostsListScreenModelProtocol: ObservableObject {
+    
+    var items: [PostListItemViewModel] { get }
+    var toast: ToastViewModel? { get set }
+    var stabModel: StabViewModel? { get }
+    var tabBarModel: TabBarViewModel { get set }
+    func updateFavours()
+}
+
+final class PostsListScreenModel: PostsListScreenModelProtocol {
     
     @Published var showOnlyFavour: Bool = false
     @Published var allItems: [PostListItemViewModel] = []

@@ -9,7 +9,7 @@ import SwiftUI
 
 final class LoginScreenBuilder {
     
-    // Resolve dependencies before viewModel initialization
+    // Resolve dependencies before view and viewModel initialization
     static func build() -> some View {
         
         let container = DIContainer.share
